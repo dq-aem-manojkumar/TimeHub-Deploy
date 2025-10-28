@@ -2,7 +2,6 @@ spring:
   datasource:
     url: ${DATABASE_URL}
     username: ${PGUSER}
-    driver-class-name: org.postgresql.Driver
     password: ${PGPASSWORD}
 
   flyway:
