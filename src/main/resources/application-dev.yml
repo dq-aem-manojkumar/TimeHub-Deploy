@@ -1,8 +1,9 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/emptimehub_local
-    username: postgres
-    password: admin
+    url: ${DATABASE_URL}
+    username: ${PGUSER}
+    driver-class-name: org.postgresql.Driver
+    password: ${PGPASSWORD}
 
   flyway:
     locations: classpath:db/seed/local,classpath:db/migration
